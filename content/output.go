@@ -96,7 +96,7 @@ func makeNavContentsFile(dir string, feed Feed) {
 
 //MakeMain ...
 func MakeMain(feed Feed) string {
-	dir := createTempDir()
+	dir := "./output"
 
 	makeContentsFile(dir, feed)
 	makeOpfFile(dir, feed)

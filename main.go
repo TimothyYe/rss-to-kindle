@@ -70,6 +70,7 @@ func main() {
 		printHeader("Feed: " + feed.Title)
 
 		printStatus("Creating files...")
+		feed.Language = "zh_CN"
 		dir := content.MakeMain(feed)
 
 		printStatus("Generating .mobi file...")
@@ -86,7 +87,7 @@ func main() {
 		)
 
 		printStatus("Cleaning up...")
-		kindle.Cleanup(dir)
+		kindle.Cleanup("./output")
 
 		printStatus("Done.")
 	}

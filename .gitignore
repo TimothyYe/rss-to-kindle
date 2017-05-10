@@ -26,6 +26,7 @@ _testmain.go
 *.exe
 *.test
 *.prof
+rss-to-kindle
 
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
